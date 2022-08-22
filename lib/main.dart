@@ -1,3 +1,5 @@
+import 'package:dial_phone_app/core/theme/app_theme.dart';
+import 'package:dial_phone_app/views/dial/dial_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,10 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Dial Phone App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Container(),
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
+      home: const DialView(),
     );
   }
 }
